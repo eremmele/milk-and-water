@@ -95,7 +95,7 @@ html {
   font-size: 1.25vw;
 }    
 body {
-background-color: #eee;
+background-color: #fff;
 opacity: 1;
 }
 @media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
@@ -192,10 +192,10 @@ ul.nav li a {
   margin-left: 4vw;
   margin-top: 1vw;
   background: #000; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, #616161, #9bc5c3); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #616161, #9bc5c3); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #616161, #9bc5c3); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, #616161, #9bc5c3); /* Standard syntax */
+  background: -webkit-linear-gradient(left, black -15%, white 80%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black -15%, white 80%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black -15%, white 80%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, black -15%, white 80%); /* Standard syntax */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;    
 }
@@ -250,7 +250,7 @@ input[type="checkbox"] {
  /*------ COVERS -------*/
  
  .cover {
-  width: 20vw;
+  width: 16vw;
   height: 12vw;
   margin: 1vw;
   background-color: #000;
