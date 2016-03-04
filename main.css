@@ -1,0 +1,357 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:900);
+
+/* based on 1440px screen, font-size base 16px = 1.11vw */
+
+/* vw converted from px, vw = em, http://www.w3schools.com/tags/ref_pxtoemconversion.asp */
+
+/* Grid --- edited (http://webdesign.tutsplus.com/tutorials/building-a-responsive-layout-with-skeleton-widescreen--webdesign-7473)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  margin: 7vw 5vw auto 5vw; /* 0 auto */
+  padding: 0 1.25vw;
+  /*margin-left: 5vw;
+  margin-top: 5vw;*/
+  box-sizing: border-box; 
+  z-index: 1;
+}
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; }
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+        .container                                  { width: 100%; } /*whatever you want - can even be fixed if you prefer*/
+        .container .column,
+        .container .columns                         { margin-left: 0.78125%; 
+                                                      margin-right: 0.78125%;   
+                                                      width: 100%;
+                                                      float: left;
+                                                      box-sizing: border-box; }}
+ 
+        .container .one.column,
+        .container .one.columns                     { width: 4.6875%; }
+        .container .two.columns                     { width: 10.9375%; }
+        .container .three.columns                   { width: 17.1875%; }
+        .container .four.columns                    { width: 23.4375%; }
+        .container .five.columns                    { width: 29.6875%; }
+        .container .six.columns                     { width: 35.9375%; }
+        .container .seven.columns                   { width: 42.1875%; }
+        .container .eight.columns                   { width: 48.4375%; }
+        .container .nine.columns                    { width: 54.6875%; }
+        .container .ten.columns                     { width: 60.9375%; }
+        .container .eleven.columns                  { width: 67.1875%; }
+        .container .twelve.columns                  { width: 73.4375%; }
+        .container .thirteen.columns                { width: 79.6875%; }
+        .container .fourteen.columns                { width: 85.9375%; }
+        .container .fifteen.columns                 { width: 92.1875%; }
+        .container .sixteen.columns                 { width: 98.4375%; }
+ 
+        .container .one-third.column                { width: 31.7708%; }
+        .container .two-thirds.column               { width: 65.1041%; }
+ 
+        /* Offsets */
+        .container .offset-by-one-third             { padding-left: 33.3333%; }
+        .container .offset-by-two-thirds            { padding-left: 66.6666%; }
+        .container .offset-by-one                   { padding-left: 6.25%; }
+        .container .offset-by-two                   { padding-left: 12.5%; }
+        .container .offset-by-three                 { padding-left: 18.75%; }
+        .container .offset-by-four                  { padding-left: 25%; }
+        .container .offset-by-five                  { padding-left: 31.25%; }
+        .container .offset-by-six                   { padding-left: 37.5%; }
+        .container .offset-by-seven                 { padding-left: 43.75%; }
+        .container .offset-by-eight                 { padding-left: 50%; }
+        .container .offset-by-nine                  { padding-left: 56.25%; }
+        .container .offset-by-ten                   { padding-left: 62.5%; }
+        .container .offset-by-eleven                { padding-left: 68.75%; }
+        .container .offset-by-twelve                { padding-left: 75%; }
+        .container .offset-by-thirteen              { padding-left: 81.25%; }
+        .container .offset-by-fourteen              { padding-left: 87.5%; }
+        .container .offset-by-fifteen               { padding-left: 93.75%; }
+
+    
+html {
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25vw;
+}    
+body {
+background-color: #eee;
+opacity: 1;
+}
+@media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  #top, #bottom, #left, #right { display: none; }
+}
+/*----*/
+#top, #bottom, #right {
+  background: #ffffff;
+  position: fixed;
+}
+#right {
+  top: 0; bottom: 0;
+  width: 4vw;
+}
+#right { right: 0; }
+    
+#top{
+  left: 0; right: 0;
+  height: 5vw;
+}
+#bottom {
+  left: 0; right: 0;
+  height: 0.9375vw;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
+}
+/*----*/
+
+
+/*------NAV-------*/
+a {
+    text-decoration:none;
+}
+a:hover {
+  color: #9fe;
+}
+a:link, a:visited, a:hover, a:active {
+  text-decoration:none;
+}
+li {
+    list-style:none
+}
+ul {    
+    margin:0
+}
+.main-nav {
+    width: 100%;    
+    /*height: 2vw;*/
+    padding: 1vw;
+    position: fixed;
+    background: #fff;
+    -webkit-transform-origin: left top;
+    -webkit-transform:rotate(-90deg) translateX(-100%);
+}
+ul.nav {    
+    height: 100%;
+    width: 100%;  
+}
+
+ul.nav li {    
+    margin-right: 3vw;
+    margin-top: -.4vw;
+    float: right;
+    height: 100%;
+    line-height: 2.8125vw;
+}
+ul.nav li a {           
+    color: #000;    
+}
+.fix-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:fixed;
+}
+.fix-nav-a {
+  max-width: 100%;
+}
+.fix-start {
+  align-self: flex-start;
+}
+.fix-end {
+  align-self: flex-end;
+}
+
+/*---------- LOGO ----------------*/
+.logo {
+  float:left;
+  position:left;
+  font-family: 'Work Sans', 'balto-black', sans-serif;
+  font-weight: 900;
+  font-size: 2.5093750250939997vw;
+  margin-left: 4vw;
+  margin-top: 1vw;
+  background: #000; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, #616161, #9bc5c3); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #616161, #9bc5c3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #616161, #9bc5c3); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #616161, #9bc5c3); /* Standard syntax */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;    
+}
+
+/*--------- TOGGLE ---------------*/
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+     width: 3vw;
+     height: 1.75vw;
+     position: relative;}
+ input[type="checkbox"]:before, input[type="checkbox"]:checked:before {
+     display: block;
+     position: relative;
+     width: 1.5vw;
+     height: 1.75vw;}
+ input[type="checkbox"]:before {
+     content: '';
+     transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+     -ms-transition: all 0.5s ease-in-out;}
+ input[type="checkbox"]:checked:before {
+     content: '';
+     left: 1.4vw;
+     transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease-in-out;
+     -webkit-transition: all 0.5s ease-in-out;
+     -o-transition: all 0.5s ease-in-out;
+     -ms-transition: all 0.5s ease-in-out;}
+ #box .detail {
+     -moz-border-radius: .1875vw;
+     border-radius: .1875vw;
+     -moz-box-shadow: inset 0 0 .625vw .3125vw rgba(0, 0, 0, 0.5);
+     box-shadow: inset 0 0 .625vw .3125vw rgba(0, 0, 0, 0.4);
+     background:#9;
+     position:fixed;
+     top: 1.5vw;
+     right: 4vw;
+     z-index:9999;}
+ #box .detail:before,#box .detail:checked:before {
+     -moz-border-radius: .1875vw;
+     border-radius: .1875vw;
+     -moz-box-shadow: inset 0 0 .4375vw .125vw rgba(0, 0, 0, .3);
+     box-shadow: inset 0 0 .4375vw .125vw rgba(0, 0, 0, 0.3);}
+ #box .detail:before {background:#9bc5c3;}
+ #box .detail:checked:before {background:#9fe;}
+
+ /*------ COVERS -------*/
+ 
+ .cover {
+  width: 20vw;
+  height: 12vw;
+  margin: 1vw;
+  background-color: #000;
+  background-image: url('fillmurray.com');
+  z-index: 1;
+ }
+/* ----- */
+/* fix later */
+#cover-grid {
+    width:100%;
+    max-width: vh;
+    margin: 6.5vw auto 0 auto;
+    text-align:center;
+    z-index: 1;
+}
+.cover-box-1 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://fillmurray.com/600/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-2 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://lorempixel.com/500/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-3 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://lorempixel.com/400/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-4 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://fillmurray.com/g/300/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-5 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://lorempixel.com/700/400");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-6 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://placecage.com/600/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-7 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://placecage.com/500/400");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+.cover-box-8 {
+    display: inline-block;
+    height: 14vw;
+    width: 20vw;
+    margin: 1vw;
+    background-color: #666;
+    background-image: url("http://lorempixel.com/900/300");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+
