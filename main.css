@@ -17,9 +17,11 @@ body {
   opacity: 1;
 }
 
-@media only screen and (max-width: 768px) {
-  html { font-size: .75vw; }
+@media(max-width: 600px){
+    body,input,textarea{
+         font-size:1.0vw !important;
     }
+}
 
 @media only screen and (max-width: 500px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   #top, #bottom, #left, #right { display: none; }
@@ -216,6 +218,12 @@ input[type="checkbox"] {
         width: 100%;
         padding-bottom: 100%;
       }
+      html, body,input,textarea {
+         font-size: 14px !important;
+      }
+      .logo {
+         font-size: 18px !important;
+      }
     }
     @media only screen and (max-width : 650px) and (min-width : 481px) {
       /* Tablet view: 2 tiles */
@@ -223,12 +231,24 @@ input[type="checkbox"] {
         width: 50%;
         padding-bottom: 50%;
       }
+      html, body,input,textarea {
+         font-size: 14px !important;
+      }
+      .logo {
+         font-size: 18px !important;
+      }
     }
     @media only screen and (max-width : 1050px) and (min-width : 651px) {
       /* Small desktop / ipad view: 3 tiles */
       .box {
         width: 33.3%;
         padding-bottom: 33.3%;
+      }
+      html, body,input,textarea {
+         font-size: 1.0rem !important;
+      }
+      .logo {
+         font-size: 1.4rem !important;
       }
     }
     @media only screen and (max-width : 1290px) and (min-width : 1051px) {
