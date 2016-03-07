@@ -11,7 +11,26 @@ html {
   font-family: 'Josefin Sans','Open Sans', sans-serif;
   font-size: 1.25vw;
   letter-spacing: 0;
+  width: 100%;
 }    
+    @media only screen and (max-width : 480px) {
+      html, body,input,textarea {
+         font-size: 14px !important;
+      }
+    }
+    @media only screen and (max-width : 650px) and (min-width : 481px) {
+      /* Tablet view: 2 tiles */
+      html, body,input,textarea {
+         font-size: 14px !important;
+      }
+    }
+    @media only screen and (max-width : 1050px) and (min-width : 651px) {
+      /* Small desktop / ipad view: 3 tiles */
+      html, body,input,textarea {
+         font-size: 1.0rem !important;
+      }
+    }
+
 body {
   background-color: #fff;
   opacity: 1;
@@ -218,9 +237,6 @@ input[type="checkbox"] {
         width: 100%;
         padding-bottom: 100%;
       }
-      html, body,input,textarea {
-         font-size: 14px !important;
-      }
       .logo {
          font-size: 18px !important;
       }
@@ -231,9 +247,6 @@ input[type="checkbox"] {
         width: 50%;
         padding-bottom: 50%;
       }
-      html, body,input,textarea {
-         font-size: 14px !important;
-      }
       .logo {
          font-size: 18px !important;
       }
@@ -243,9 +256,6 @@ input[type="checkbox"] {
       .box {
         width: 33.3%;
         padding-bottom: 33.3%;
-      }
-      html, body,input,textarea {
-         font-size: 1.0rem !important;
       }
       .logo {
          font-size: 1.4rem !important;
