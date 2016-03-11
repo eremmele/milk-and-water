@@ -2,8 +2,9 @@ var vertexHeight = 15000,
   planeDefinition = 100,
   planeSize = 1245000,
   totalObjects = 100000,
-  background = "#73b2ce",//0x555555,
-  meshColor = "#006fa2";//0x000000;
+  background = "#111",//0x555555, FF5733
+  meshColor = "#900C3F";//0x000000;
+
 
 var container = document.createElement('div');
 document.body.appendChild( container );

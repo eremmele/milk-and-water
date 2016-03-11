@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 canvas {
-  background-color: pink;
+  background-color: #00CDFF;
 }
 p {
   color: rgba(255,255,255,0.6);
