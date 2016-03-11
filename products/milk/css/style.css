@@ -1,0 +1,18 @@
+body {
+  background-color: #000;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+}
+canvas {
+  background-color: pink;
+}
+p {
+  color: rgba(255,255,255,0.6);
+  font-family: helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 10px;
+}
