@@ -1,54 +1,8 @@
-var bgcolorlist=new Array("silver", "#BAF3C3", "#c3baf3")
-
-$(".color").css("background-color",bgcolorlist[Math.floor(Math.random()*bgcolorlist.length)]);
-
-///////////////////////////////////////////////
-
-var colors = ["#1abc9c","#2ecc71","#3498db","#9b59b6","#34495e","#f1c40f","#e67e22","#e74c3c","#ecf0f1"],
-    colorsDark  = ["#16a085","#27ae60","#2980b9","#8e44ad","#2c3e50","#f39c12","#d35400","#c0392b","#bdc3c7"];
-
-var random = Math.floor((Math.random() * colors.length)),
-    color = colors[random],
-    colorDark = colorsDark[random];
-
-var flatBackground = document.querySelectorAll('.flatBackground');
-var flatDarkBackground = document.querySelectorAll('.flatDarkBackground');
-
-for(var a = 0; a < flatBackground.length ; a ++){
-    flatBackground[a].style.backgroundColor = color;
-};
-
-for(var b = 0; b < flatDarkBackground.length ;b ++){
-    flatDarkBackground[b].style.backgroundColor = colorDark;
-};
-
-
-
-
-if(random == 8){
-    document.body.style.color = "#000";
-};
-
-///
-
-jQuery(function ($) {
-    var $panel = $("#panel");
-    var $tabs = $('.tab').click(function () {
-        var $this = $(this),
-            isActive = $this.hasClass('active');
-        if ($panel.is(':visible') && !isActive) {
-            $panel.css('background-image', 'url(' + $this.data('background') + ')');
-            $tabs.removeClass('active');
-            $this.addClass('active');
-        } else {
-            if (!isActive) {
-                $panel.css('background-image', 'url(' + $this.data('background') + ')');
-            }
-            $panel.slideToggle();
-            $this.toggleClass('active');
-        }
-    });
-})
+function ran_col() { //function name
+                var color = '#'; // hexadecimal starting symbol
+                var letters = ['000000','FF0000','00FF00','0000FF','FFFF00','00FFFF','FF00FF','C0C0C0']; //Set your colors here
+                color += letters[Math.floor(Math.random() * letters.length)];
+                document.getElementById('posts').style.background = color; // Setting the random color on your div element.
 
 
 ////////// ANIMATED DIVS
@@ -85,11 +39,48 @@ function animateDiv(){
     $('.c').animate({ top: newq[.5], left: newq[1] }, speed, function(){
       animateDiv();        
     });
-    $('.d').animate({ top: newq[1], right: newq[0] }, speed, function(){
+    $('.d').animate({ top: newq[1], right: newq[.5] }, speed, function(){
       animateDiv();        
     })
+    // need to adjust speeds....
+        $('.e').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.f').animate({ top: newq[1], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.g').animate({ top: newq[.5], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.h').animate({ top: newq[1], right: newq[0] }, speed, function(){
+      animateDiv();        
+    })
+        $('.i').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.j').animate({ top: newq[1], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.k').animate({ top: newq[.5], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.l').animate({ top: newq[1], right: newq[0] }, speed, function(){
+      animateDiv();        
+    })
+        $('.m').animate({ top: newq[0], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.n').animate({ top: newq[1], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
+    $('.o').animate({ top: newq[.5], left: newq[1] }, speed, function(){
+      animateDiv();        
+    });
 };
 
+//    var oldq = $('.a').offset();
+//    var oldq = $('.a').offset();
+//    var oldq = $('.a').offset();
 
 function calcSpeed(prev, next) {
     

@@ -1,0 +1,43 @@
+html, body {
+	margin: 0;	
+	padding: 0;
+}
+
+body {
+	background: #fff;
+	color: #999;
+	font: 100%/18px helvetica, arial, sans-serif;
+	cursor: url('fassbender.gif');
+}
+
+a {
+	color: #2fa1d6;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;	
+}
+
+#canvas-container {
+	left: 0;
+	right: 0;
+	margin: 0;
+	position: absolute;
+	top: 0;
+ 	width: 100%;
+	z-index: 2;
+	max-height: 20vh;
+}
+
+		
+canvas {
+	display: block;
+	position: relative;
+	z-index: 3;
+}
+
+canvas:active {
+	cursor: url('fassbender.gif');
+}

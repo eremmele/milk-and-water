@@ -1,0 +1,9 @@
+img {
+  display:none;
+}
+canvas {
+  position:fixed;
+  top:0;
+  left:0;
+  cursor: .custom-cursor { pointer-events: none; }
+};

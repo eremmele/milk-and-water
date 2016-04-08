@@ -1,0 +1,13 @@
+body, html, canvas {
+  margin: 0px; 
+  padding: 0px; 
+  position: absolute; 
+}
+
+canvas {
+  background-color: #151B1F; 
+}
+
+a {
+  color: #1abc9c; 
+}
