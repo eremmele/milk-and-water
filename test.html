@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<style>
-/* POSITIONING CONTENT */
-body {
-  background: #bbb;
-}
-.row {
-  width: 98%;
-  margin: 0px auto;
-}
 
-/* ACTUAL CSS FOR THE ELEMENTS PRESENTED */
-.box {
-  background: #E64848;
-  height: 200px;
-  width: 100%;
-}
-.js-shadow {
-  color: #fff;
-  font-size: 10em;
-  text-align: center;
-  display: block;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-}
-</style>
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>milk-and-water</title>
+  <meta name="description" content="">
+  <meta name="author" content="Erica Remmele">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="about/css/style.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+ <!-- <script src="js/jquery.js"></script> -->
+  <script src="grid.js"></script>
+  <script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
   <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-  <script src="contact.js"></script>
+  <script src="popup.js"></script>
+  <script src="popup2.js"></script>
+  <script src="popup3.js"></script>
+
+   <script type="text/javascript">
+  top.visible_div_id = 'tright';
+  function toggle_visibility(id) {
+     var old_e = document.getElementById(top.visible_div_id);
+     var new_e = document.getElementById(id);
+     if(old_e) {
+        console.log('old', old_e, 'none');
+        old_e.style.display = 'none';
+     }
+    console.log('new', new_e, 'block');
+     new_e.style.display = 'block';   
+     top.visible_div_id = id;          
+  }
+  </script>
+
+
+  
+
 </head>
 
+
+
 <body>
-<!-- Positioning -->
-<div class="row">
-    <!-- The box for the text & shadow -->
-    <div class="box">
-      <!-- Try changing the word... -->
-      <p class="js-shadow">Testing</p>
-    </div>
+
+
+<!-- NAV -->
+<div>
+    <div class="main-nav sticky"><!--fix-nav-->
+          <ul class="nav"> <!--fix-nav-a-->
+            <li><a href="" class="popup-link-1">about</a></li>
+            <li><a href="index.html">products</a></li>
+            <li><a href="" class="popup-link-2">barter</a></li>
+            <li><a href="" class="popup-link-3">contact</a></li>
+            <li><a href="test.html">contribute</a></li>
+          </ul>
+     </div>
+</div>
+<!---->
+
+
+
+<div class="github">
+      <iframe width="1024" height="768" src="https://github.com/eremmele/milk-and-water.git" style="-webkit-transform:scale(0.5);-moz-transform-scale(0.5);"></iframe>
+      <!--<iframe src="https://github.com/eremmele/milk-and-water.git"></iframe>-->
+<!--<script type="text/javascript"> $('body').repo({ user: 'eremmele', name: 'milk-and-water' }); </script>-->
 </div>
 
 </body>
+
 </html>
