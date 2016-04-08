@@ -385,6 +385,8 @@ position:fixed;
     padding: 5vh;
     padding-left: 8vh;
     padding-right: 8vh;
+    font-family: 'open sans', sans-serif;
+    font-size: 14px;
 }
 
 .popup-box .close {
