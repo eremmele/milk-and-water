@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 
-	$('body').append('<div class="popup-box" id="popup-box-2"><div class="close">X</div><div class="top">test2</div><div class="bottom">:D</div></div>');
+	$('body').append('<div class="popup-box" id="popup-box-2"><div class="close">X</div><div class="top"></div><div class="bottom"></div></div>');
 	$('body').append('<div id="blackout"></div>');
 	
 	var boxWidth = 400;
