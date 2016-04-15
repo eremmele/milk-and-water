@@ -1,0 +1,13 @@
+body{
+font-family: helvetica, sans-serif;
+line-height: 1.2;
+font-size: 14px;
+}
+
+.question {
+	padding-left: 10px;
+}
+form {
+	padding: 1vw;
+}
+

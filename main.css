@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:900);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700italic);
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,500,600,800,700);
 
 /* based on 1440px screen, font-size base 16px = 1.11vw */
 
 /* vw converted from px, vw = em, http://www.w3schools.com/tags/ref_pxtoemconversion.asp */
 
 html {
-  font-weight: 300italic;
-  font-family: 'Josefin Sans','Open Sans', sans-serif;
+  font-weight: 600;
+  font-family: 'Work Sans','Josefin Sans','Open Sans', sans-serif;
   font-size: 1.25vw;
   letter-spacing: 0;
   width: 100%;
@@ -57,17 +58,17 @@ body {
 }
 #right { right: 0; }
     
-#top, #contact{
+#top, #contact {
   left: 0; right: 0;
-  height: 5vw;
+  height: 4vw; /*5vw for logo*/
 }
 #bottom {
   left: 0; right: 0;
-  height: 0.9375vw;
+  height: 4.25vw;
 }
 #top { top: 0; }
 #bottom { bottom: 0; }
-}
+
 /*----*/
 
 
@@ -84,6 +85,7 @@ a:hover {
 }
 a:link, a:visited, a:hover, a:active {
   text-decoration:none;
+  color: #000;
 }
 li {
     list-style:none
@@ -100,6 +102,7 @@ ul {
     -webkit-transform-origin: left top;
     -webkit-transform:rotate(-90deg) translateX(-100%);
 }
+
 ul.nav {    
     height: 100%;
     width: 100%;  
@@ -136,23 +139,23 @@ ul.nav li a {
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
-  top: 5vw;
+  top: 4vw;
 }
 
 /*---------- LOGO ----------------*/
 .logo {
   float:left;
   position:left;
-  font-family: 'Josefin Sans','Work Sans', 'balto-black', sans-serif;
+  font-family: 'Work Sans', 'Josefin Sans', 'balto-black', sans-serif;
   font-weight: 900, light;
   font-size: 2vw;/* 2.5093750250939997vw;*/ 
   margin-left: 1.75vw;
-  margin-top: 1.45vw;
+  margin-top: .75vw; /*1.45vw if at top*/
   background: #000; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left, black -15%, white 80%); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, black -15%, white 80%); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, black -15%, white 80%); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right, black -15%, white 80%); /* Standard syntax */
+  background: -webkit-linear-gradient(left, black -15%, white 95%); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, black -15%, white 95%); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, black -15%, white 95%); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, black -15%, white 95%); /* Standard syntax */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;    
 }
@@ -162,10 +165,18 @@ ul.nav li a {
   float: right;
   position: fixed;
   top: 1.5vw;
-  right: 1.75vw;
+  right: 2vw;
   z-index:9999;
+  display: inline-block;
 }
 
+.tright {
+  float: right;
+}
+.tleft {
+  float: right;
+  margin-left: .35vw;
+}
 /*input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -249,7 +260,7 @@ ul.nav li a {
  
     .wrap {
       overflow: hidden;
-      margin: 5vw auto;
+      margin: 7vw 0 0 8vw;
       max-width: 90%;
       width:90%;
       text-align: center;
@@ -273,9 +284,7 @@ ul.nav li a {
       float: left;
       position: relative;
       width: 20%;
-      padding-bottom: 20%;
-      z-index: 3;
-      color: ;
+      
     }
     .boxInner {
       position: absolute;
@@ -287,10 +296,14 @@ ul.nav li a {
       display: inline-block;
       z-index: 4;
       background-color: #fff;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      width: 60%;
+      height: 60%;
     }
       .boxInner img {
       width: inherit;
-      height:100%;
       color: #fff;
       z-index: 4;
     }
@@ -437,6 +450,7 @@ position:fixed;
 
 
 /* -------- */
+
 .theme_1{
     background: #f00;
 }
@@ -473,4 +487,9 @@ position:fixed;
   width: 100%;
   height: 20vh;
   background-color: ;
+}
+
+
+canvas {
+    display:block
 }

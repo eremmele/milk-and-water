@@ -61,8 +61,6 @@
 <div>
     <div class="main-nav sticky"><!--fix-nav-->
           <ul class="nav"> <!--fix-nav-a-->
-            <li><a href="" class="popup-link-1">about</a></li>
-            <li><a href="index.html">products</a></li>
             <li><a href="" class="popup-link-2">barter</a></li>
             <li><a href="" class="popup-link-3">contact</a></li>
             <li><a href="test.html" class="">contribute</a></li>
@@ -73,13 +71,20 @@
 
 
 <div id="top">
-  <div class="logo"><a href="index.html">milk-and-water</a></div>
+          <ul>
+            <li style="display:inline;float:left;margin:1.25vw 2vw 0 -.75vw"><a href="" class="popup-link-1">about</a></li>
+            <li style="display:inline;float:left;margin:1.25vw auto"><a href="index.html">products</a></li>
+          </ul>
+  
 
        <!--***********TOGGLE***********
        <div id="box"><input class="detail" type="checkbox"></div>
        -->
 </div>
-<div id="bottom"></div>
+
+<div id="bottom">
+    <div class="logo"><a href="index.html">milk-and-water</a></div>
+</div>
 <!--[if lte IE 6]>
   <style>#top, #bottom, #left, #right { display: none; }</style>
 <![endif]-->
@@ -95,12 +100,12 @@
 
 
 <div id="toggle">
-<div onclick="toggle_visibility('tleft');">
+<div class="tleft" onclick="toggle_visibility('tleft');">
   grid
 </div>
 
-<div onclick="toggle_visibility('tright');" >
-  chaos
+<div class="tright" onclick="toggle_visibility('tright');" >
+  chaos - 
 </div>
 </div>
 
@@ -209,6 +214,24 @@
 
   <div class="wrap2">
 
+<div>
+<a href="products/milk/index.html" target="_blank"> <div class='a'></div> </a>
+<a href="products/landscape/index.html" target="_blank"> <div class='b'></div> </a> 
+<a href="" target="_blank"> <div class='c'></div> </a>
+<a href="" target="_blank"> <div class='d'></div> </a>
+<a href="" target="_blank"> <div class='e'></div> </a>
+<a href="" target="_blank"> <div class='f'></div> </a>
+<a href="" target="_blank"> <div class='g'></div> </a>
+<a href="" target="_blank"> <div class='h'></div> </a>
+<a href="" target="_blank"> <div class='i'></div> </a>
+<a href="" target="_blank"> <div class="k"></div> </a>
+<a href="" target="_blank"> <div class="l"></div> </a>
+<a href="" target="_blank"> <div class="m"></div> </a>
+<a href="" target="_blank"> <div class="n"></div> </a>
+<a href="" target="_blank"> <div class="o"></div> </a>
+</div>    
+
+<!--
 <a href="products/milk/index.html" target="_blank"> <div class='a color'></div> </a>
 <a href="products/landscape/index.html" target="_blank"> <div class='b color'></div> </a> 
 <a href="" target="_blank"> <div class='c color'></div> </a>
@@ -224,7 +247,7 @@
 <a href="" target="_blank"> <div class="m color"></div> </a>
 <a href="" target="_blank"> <div class="n color"></div> </a>
 <a href="" target="_blank"> <div class="o color"></div> </a>
-
+-->
   </div>
 
 </div>
@@ -355,7 +378,9 @@ This is moving to each individual product, with a preview of the link. Github re
 </body>
 
 
-
+<footer>
+Designed/developed by Erica Remmele 2016.
+</footer>
 
 
 <!-- not sure about this one, need to get rid of cloudflare...
