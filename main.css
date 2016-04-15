@@ -284,7 +284,11 @@ ul.nav li a {
       float: left;
       position: relative;
       width: 20%;
-      
+      padding-bottom: 10%;
+      padding-right: 2.5%;
+      padding-left: 2.5%;
+      padding-top: 15%;
+      z-index: 3;
     }
     .boxInner {
       position: absolute;
