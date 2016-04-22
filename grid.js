@@ -26,7 +26,7 @@ function makeNewPosition(){
 
 function animateDiv(){
     var newq = makeNewPosition();
-    $('.a').animate({ top: newq[0], left: newq[1] }, function(){
+    $('.a').animate({ top: newq[1], left: newq[1] }, function(){
       animateDiv();        
     });
     
