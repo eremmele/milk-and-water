@@ -1,0 +1,12 @@
+div {
+	background-image: url("TMYK.gif");
+	background-repeat: repeat;
+}
+
+div.a {
+width: 150px;
+height:150px;
+ background-image:url("TMYK.gif");
+position:fixed;
+    
+}

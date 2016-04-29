@@ -1,0 +1,383 @@
+/* Hover to see the Magic
+/* or use left / right arrow keys
+/* to focus.
+/* Full page preview and
+/* (Screen >= 1080p) are recommended
+/** **************************** **/
+
+/** FontFace
+/** **************************** **/
+
+@font-face {
+  font-family: 'SFNS';
+  font-style: normal;
+  font-weight: 400;
+  src: local('SFNS'), local('SFNS-Regular'), url(https://5daff37b9095076ff2c103b12ce1734d19bc7fd6.googledrive.com/host/0B4GtvQ-eEGw_bGZQVkt2SEdSdlU/Codepen/Apple%20TV%203D%20Parallax%20Effect/font/regular.WOFF) format('woff');
+}
+@font-face {
+  font-family: 'SFNS';
+  font-style: normal;
+  font-weight: 500;
+  src: local('SFNS'), local('SFNS-bold'), url(https://5daff37b9095076ff2c103b12ce1734d19bc7fd6.googledrive.com/host/0B4GtvQ-eEGw_bGZQVkt2SEdSdlU/Codepen/Apple%20TV%203D%20Parallax%20Effect/font/bold.WOFF) format('woff');
+}
+
+/** Main
+/** **************************** **/
+
+html {height: 100%}
+body {
+    background: #95e4f7;
+    background: linear-gradient(135deg, #96b4e7 0%,#95e4f7 100%,#b2dddb,#99ebff) no-repeat fixed;
+    height: 100%;
+    font-family: 'SFNS', sans-serif;
+    min-width: 1720px;
+    min-height: 925px;
+    line-height: 1.4;
+    position: relative;
+    
+}
+p {
+  font-weight: 500;
+  font-size: 40px;
+  color: #555;
+  padding:25px;
+  text-align: center;
+  
+}
+
+/** Container
+/** **************************** **/
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  background: rgba(255,255,255,.5);
+  box-shadow: 0 8px 200px rgba(0,0,0,.6); 
+  opacity: 0;
+  transform: translate3d(0,-100%,0);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+
+/** Posters
+/** **************************** **/
+
+.poster-margin {margin: 10px 35px 0 0;display: inline-block}
+
+.poster-margin:last-child {
+    margin-right: 0px;
+}
+
+.poster {
+    position: relative;
+    display: inline-block;
+    width: 276px;
+    height: 415px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+}
+
+.poster-title {
+   font-size: 25px;
+   margin-top: 35px;
+   color: #fff;
+   text-shadow: 0 1px 1px rgba(0,0,0,.2);
+   opacity: 0;
+   transition: all 300ms ease;
+   -webkit-transition: all 300ms ease;
+   position: relative;
+   z-index: -1
+}
+
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.shadow {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.09);
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+    filter: blur(1px);
+    z-index: -1;
+}
+
+.shadow-hoverd {
+    top: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.glow {
+    position: absolute;
+    top: -15px;
+    left: -70px;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: radial-gradient(rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 60%);
+    z-index: 10;
+}
+.glow-back {
+    background: radial-gradient(rgba(43, 186, 211, 0.8) 0%, rgba(43, 186, 211, 0) 60%);
+}
+
+/** Skyfall Poster
+/** **************************** **/
+
+.poster-skyfall-bg.bg-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1;
+}
+
+.poster-skyfall-bg {
+    background-color: transparent;
+    z-index: 100
+}
+
+
+.poster-skyfall-lyr1 {
+    position: absolute;
+    width: 220px;
+    height: 29px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 59px;
+    left: 50%;
+    margin-left: -110px;
+    z-index: 2;
+}
+
+.poster-skyfall-lyr2 {
+    position: absolute;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    z-index: 3;
+    width: 40px;
+    height: 13px;
+    margin-left: -20px;
+    top: 95px;
+    left: 50%
+}
+
+.poster-skyfall-lyr3 {
+    position: absolute;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    z-index: 3;
+    width: 160px;
+    height: 58px;
+    margin-left: -80px;
+    top: 118px;
+    left: 50%;
+    z-index: 4;
+}
+
+.poster-skyfall-lyr4 {
+    position: absolute;
+    background-image: url("burger.jpg");
+    z-index: 1;
+    background-size: contain;
+    width: 350px;
+    height: 111px;
+    margin-left: -80px;
+    top: 210px;
+    left: 70px;
+}
+
+.poster-skyfall-lyr5 {
+    position: absolute;
+    background-image: url("burger.jpg");
+    z-index: 6;
+    background-size: contain;
+    width: 300px;
+    height: 153px;
+    bottom: 0;
+    left: -10px
+}
+
+/** I Origins Poster
+/** **************************** **/
+
+.poster-iorigins-bg {
+    background-image: url("burger.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+.poster-iorigins-lyr1 {
+    position: absolute;
+    width: 220px;
+    height: 35px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 59px;
+    left: 50%;
+    margin-left: -110px;
+    z-index: 2;
+}
+
+/** The Fault in Our Stars Poster
+/** **************************** **/
+
+.poster-TFIOS-bg {
+    background: #fff url("burger.jpg") center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+.poster-TFIOS-bg.bg-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    overflow: hidden;
+    background: transparent;
+    z-index: 1;
+}
+.poster-TFIOS-lyr1 {
+    position: absolute;
+    width: 85px;
+    height: 120px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 20px;
+    left: 30px;
+    z-index: 2;
+}
+.poster-TFIOS-lyr2 {
+    position: absolute;
+    width: 276px;
+    height: 363px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/** American Beauty Poster
+/** **************************** **/
+
+.poster-AB-bg {
+    background-image: url("burger.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+.poster-AB-lyr1 {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 80px;
+    left: 40px;
+    z-index: 2;
+}
+
+/** John Wick Poster
+/** **************************** **/
+
+.poster-johnwick-bg {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    z-index: 1
+}
+.poster-johnwick-lyr1 {
+    position: absolute;
+    width: 229px;
+    height: 22px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 20px;
+    left: 25px;
+    z-index: 2;
+}
+.poster-johnwick-lyr2 {
+    position: absolute;
+    width: 59px;
+    height: 160px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 80px;
+    right: 15px;
+    z-index: 2;
+}
+.poster-johnwick-lyr3 {
+    position: absolute;
+    width: 230px;
+    height: 390px;
+    background-image: url("burger.jpg");
+    background-size: contain;
+    top: 25px;
+    left: 27px;
+    z-index: 2;
+}
+
+/** Bottom
+/** **************************** **/
+
+.bottom {margin-top: 100px}
+.bottom p {
+  font-weight: 400;
+  color: #333;
+  padding:0
+}
+
+.bottom .ps {
+   color: #333;
+   font-size: 25px
+}
+.bottom b {
+  font-weight: bold
+}
+#label-off,#off {position: absolute;bottom: 50px}
+#label-off {left: 15px}
+#off {left: 130px}
+#label-repeat,#repeat {position: absolute;bottom: 20px}
+#label-repeat {left: 15px}
+#repeat {left: 290px}
+
+.loaded #repeat:checked ~ .container {    transform: translate3d(0,0,0);
+opacity:1
+}
+
+#off:checked + .container [class*=poster-skyfall-lyr],
+#off:checked + .container .poster-skyfall-bg,
+#off:checked + .container [class*=poster-iorigins-lyr],
+#off:checked + .container .poster-iorigins-bg,
+#off:checked + .container [class*=poster-johnwick-lyr],
+#off:checked + .container .poster-johnwick-bg,
+#off:checked + .container [class*=poster-TFIOS-lyr],
+#off:checked + .container .poster-TFIOS-bg,
+#off:checked + .container [class*=poster-AB-lyr],
+#off:checked + .container .poster-AB-bg {background: #fff}
